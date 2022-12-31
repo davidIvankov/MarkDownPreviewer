@@ -33,9 +33,11 @@ class Wrapper extends React.Component {
   
     return (  
       <div id="main">
+      <div>
         <div className="blue"><h3>editor</h3></div>
         <textarea id="editor" value={this.state.text} onChange={this.handleChange}>
         </textarea>
+        </div>
         <div className="blue prev"><h3>preview</h3></div>
           <div id="preview" dangerouslySetInnerHTML={this.getMarkdownText()}  >
         </div>
